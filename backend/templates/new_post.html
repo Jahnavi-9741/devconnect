@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Post - DevConnect</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <button id="darkToggle" class="toggle-btn">☀︎</button>
+    <div class="container">
+        <h1>New Post</h1>
+        <form method="post" action="/post">
+            <input type="text" name="username" placeholder="Your Name" required><br>
+            <textarea name="content" placeholder="What's on your mind?" required></textarea><br>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+</html>
+

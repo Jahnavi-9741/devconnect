@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevConnect Feed</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <button id="darkToggle" class="toggle-btn">☀︎</button>
+    <div class="container">
+        <h1>DevConnect</h1>
+        <a class="new-post" href="/new">+ New Post</a>
+        {% for post in posts %}
+        <div class="post">
+            <div class="profile-card">
+                <h3>{{ post.username }}</h3>
+            </div>
+            <p>{{ post.content }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+</html>
+
